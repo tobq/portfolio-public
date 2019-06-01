@@ -1,1 +1,2 @@
-<?php header( 'Location: /index.html' ) ;  ?>
+echo $_SERVER['HTTP_HOST'];
+<?php //header( 'Location: /index.html' ) ;  ?>
