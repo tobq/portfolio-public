@@ -1,7 +1,7 @@
 <?php
 
 $str = "/index.html";
-switch (explode('.', 'en.example.com')[0]) {
+switch (explode('.', $_SERVER['HTTP_HOST'])[0]) {
     case "lope":
         $str = "https://www.instagram.com/lopelocks";
     case "paul":
