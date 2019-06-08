@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: roboto, Arial, Serif;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.314), transparent);
+            padding: 30px;
+            font-size: 36px;
+        }
+
+        video::-webkit-media-controls {
+            display: none;
+        }
+
+        /* Could Use thise as well for Individual Controls */
+        video::-webkit-media-controls-play-button {
+        }
+
+        video::-webkit-media-controls-volume-slider {
+        }
+
+        video::-webkit-media-controls-mute-button {
+        }
+
+        video::-webkit-media-controls-timeline {
+        }
+
+        video::-webkit-media-controls-current-time-display {
+        }
+
+        section {
+            text-align: center;
+            padding: 0 30px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .device, video, p {
+            display: inline-block;
+            width: calc(50vmin - 60px);
+        }
+
+        p {
+            text-align: left;
+            margin: 10px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        .device, video {
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        .device {
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: calc(50vmin - 60px);
+        }
+
+        .title {
+            font-size: 30px;
+            padding: 20px 0;
+            flex-shrink: 0;
+            flex-grow: 0;
+            width: 100%;
+        }
+        video{
+            height: calc(88vmin - 100px)
+        }
+    </style>
+    <title>User Guide</title>
+</head>
+<body>
+<header>User Guide</header>
+<section>
+    <div class="title">Home Screen</div>
+    <div class="device" style="background-image: url(home.jpg)"></div>
+    <p>On this screen you can open or scroll through all voice books saved on your device<br/><br/>
+        Or, you can choose to record a new voice book. Note: You will need an internet connection
+    for transcription to work, as it makes use of our cloud technologies</p>
+</section>
+<section>
+    <div class="title">Transcriber</div>
+    <video src="record.mp4" autoplay muted loop></video>
+    <p>After clicking the record button, you're taking to the transcriber view<br/><br/>
+        Here, you can record what ever you want and have your speed automatically transcribed.<br/><br/>
+        Your mileage may vary, based on your pronunciation<br/><br/>
+        Voice Books can recognise many many languages, and uses your device language as a hint for transcription<br/><br/>
+    The first block of words you say are used as the title for the book</p>
+</section>
+<section>
+    <div class="title">Pausing Transcription</div>
+    <video src="record_pause.mp4" autoplay muted loop></video>
+    <p>You can pause transcription by pressing the pause button in the transcriber view<br/><br/>
+        You can easily resume transcription using the record button, again</p>
+</section>
+<section>
+    <div class="title">Settings</div>
+    <video src="settings.mp4" autoplay muted loop></video>
+    <p>On this page you can edit the play back speed at which voice books run<br/><br/>
+        You can also re-open this user guide by clicking the button at the bottom<br/><br/>
+        Books are automatically saved by pressing the stop button or the back button on your phone</p>
+</section>
+<section>
+    <div class="title">Viewing Book</div>
+    <video src="play.mp4" autoplay muted loop></video>
+    <video src="pause.mp4" autoplay muted loop></video>
+    <p>Once a book has been recorded and saved, it can be opened from the main home page<br/><br/>
+        On this screen, you start the playback of the Voice Book. This plays the original Voice Book audio, synchronised
+        along
+        with the highlighted words in the book's transcript<br/><br/>
+        You can also pause / stop the playback at any point using the pause / stop buttons.<br/><br/>
+        The books speed is decided by the playback speed setting from the settings menu</p>
+</section>
+<section>
+    <div class="title">Book Options</div>
+    <video src="share.mp4" autoplay muted loop></video>
+    <video src="listen.mp4" autoplay muted loop></video>
+    <p>By pressing the options button in the top right, you can open up a context menu<br/><br/>
+        In this menu you can share this book (as text)<br/>
+        You can also listen to the original voice book audio using a player of your choice</p>
+</section>
+</body>
+</html>
