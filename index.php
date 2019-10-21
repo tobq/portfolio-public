@@ -1,6 +1,10 @@
 <?php
 
-switch (explode('.', $_SERVER['HTTP_HOST'])[0]) {
+$DOMAIN = 'akinyemi.uk';
+$DOMAIN_LENGTH = strlen($DOMAIN);
+
+$domain = $_SERVER['HTTP_HOST'];
+switch (substr($domain, 0, strlen($domain) - $DOMAIN_LENGTH)) {
     case "lope":
         header("Location: https://www.instagram.com/lopelocks");
         break;
@@ -13,8 +17,8 @@ switch (explode('.', $_SERVER['HTTP_HOST'])[0]) {
     case "tobi":
         echo file_get_contents('index.html');
         break;
-    default :
-        header("Location: http://tobi.akinyemi.uk");
+    default:
+        header("Location: http://tobi.$DOMAIN");
 };
 
 
