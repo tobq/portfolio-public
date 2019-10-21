@@ -15,6 +15,8 @@ function redirect($DOMAIN)
     header("Location: http://tobi.$DOMAIN");
 }
 
+echo $domain;
+
 if (substr_compare($domain, $DOMAIN, -strlen($DOMAIN)) !== 0) {
     echo ">>>>>>>>>>>>>>>>>>>>>>>";
     redirect($DOMAIN);
