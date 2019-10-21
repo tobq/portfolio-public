@@ -7,6 +7,16 @@ $domain = $_SERVER['HTTP_HOST'];
 
 $subdomain = substr($domain, 0, strlen($domain) - $DOMAIN_LENGTH - 1);
 echo $subdomain;
+/**
+ * @param $DOMAIN
+ */
+function redirect($DOMAIN)
+{
+    header("Location: http://tobi.$DOMAIN");
+}
+
+if (substr_compare($domain, $DOMAIN, -strlen($DOMAIN)) !== 0) redirect($DOMAIN);
+
 switch ($subdomain) {
     case "lope":
         header("Location: https://www.instagram.com/lopelocks");
@@ -20,6 +30,6 @@ switch ($subdomain) {
     case "tobi":
         echo file_get_contents('index.html');
         break;
-//    default:
-//        header("Location: http://tobi.$DOMAIN");
+    default:
+        redirect($DOMAIN);
 };
