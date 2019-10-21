@@ -6,7 +6,7 @@ $DOMAIN_LENGTH = strlen($DOMAIN);
 $domain = $_SERVER['HTTP_HOST'];
 
 $subdomain = substr($domain, 0, strlen($domain) - $DOMAIN_LENGTH - 1);
-echo $subdomain
+echo $subdomain;
 //switch ($subdomain) {
 //    case "lope":
 //        header("Location: https://www.instagram.com/lopelocks");
