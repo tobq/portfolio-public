@@ -23,6 +23,7 @@ if (substr_compare($domain, $DOMAIN, -strlen($DOMAIN)) !== 0) {
     case "paul":
         header("Location: https://www.linkedin.com/in/paul-akinyemi-9b529776");
         break;
+    case "cv.tobi":
     case "cv":
         header("Location: https://1drv.ms/w/s!AnLTraYGkdweklQBhTZ2c8wWwEJg");
         break;
