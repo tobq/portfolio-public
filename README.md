@@ -1,4 +1,4 @@
 # portfolio
-[tobq.github.io](http://tobq.github.io)
+[tobi.akinyemi.org](https://tobi.akinyemi.org)
 
 Source available [here](https://github.com/tobq/portfolio)
