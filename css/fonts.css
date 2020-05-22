@@ -1,0 +1,44 @@
+@font-face {
+    font-family: couture;
+    src: url(/font/couture.otf);
+}
+
+@font-face {
+    font-family: coyote;
+    src: url(/font/coyote.ttf);
+}
+
+@font-face {
+    font-family: KC;
+    src: url(/font/KC.ttf);
+}
+
+@font-face {
+    font-family: lemon  ;
+    src: url(/font/lemon.otf);
+}
+
+@font-face {
+    font-family: Roboto  ;
+    src: url(/font/roboto.ttf);
+}
+
+@font-face {
+    font-family: rbold;
+    src: url(/font/roboto-bold.ttf);
+}
+
+@font-face {
+    font-family: rbblack;
+    src: url(/font/roboto-black.ttf);
+}
+
+@font-face {
+    font-family: rcondensed;
+    src: url(/font/roboto-condensed.ttf);
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(/font/bebas.otf);
+}

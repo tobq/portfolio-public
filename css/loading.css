@@ -1,0 +1,59 @@
+#loading-overlay {
+    z-index: 99999;
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: opacity 500ms ease 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loading-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#loading-overlay.active > .tobi-spinner {
+    transform: scale(1);
+}
+
+#loading-overlay > .tobi-spinner {
+    transition: transform 500ms ease 200ms;
+}
+
+.tobi-spinner {
+    transform: scale(1.5);
+    font-size: 100px;
+    font-family: bebas, Arial, serif;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tobi-spinner > span {
+    transition: transform 500ms ease;
+    display: inline-block;
+    animation: spin 1s infinite ease;
+}
+
+.tobi-spinner.disabled > span {
+    animation: none;
+    transform: rotate(0) !important;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}

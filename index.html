@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/loading.css"/>
 </head>
 <body>
 <header>
-    <a id="logo" href="http://tobi.akinyemi.org">TOBI</a>
-    <div id="info-buttons">
-        <a id="email-link" href="mailto:tobi@akinyemi.org">tobi@akinyemi.org
+    <a id="logo" href="https://tobi.akinyemi.org">TOBI</a>
+    <div id="info-links">
+        <a id="music-link" href="https://tobi.productions" target="_blank">
+            <span>music</span>
+        </a>
+        <a id="email-link" href="mailto:tobi@akinyemi.org" target="_blank">
+            <span>tobi@akinyemi.org</span>
             <div id="email-icon"></div>
         </a>
-        <a href="http://github.com/tobq" id="github-link"></a>
+        <a href="https://github.com/tobq" target="_blank">
+            <div id="github-link"></div>
+        </a>
     </div>
 </header>
 <section id="home">
@@ -33,6 +41,11 @@
     <div id="project-cards"></div>
 </section>
 
+<div id="loading-overlay" class="active">
+    <div class="tobi-spinner">
+        T<span>O</span>BI
+    </div>
+</div>
 <script src="js/bundle.js"></script>
 </body>
 </html>
