@@ -48,12 +48,15 @@
 
 @keyframes spin {
     0% {
-        transform: rotate(10deg);
+        transform: rotate(0deg);
     }
-    50% {
+    25% {
+        transform: rotate(10deg);
+    }m
+    75% {
         transform: rotate(-10deg);
     }
     100% {
-        transform: rotate(10deg);
+        transform: rotate(0deg);
     }
 }
